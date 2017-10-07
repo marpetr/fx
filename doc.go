@@ -18,6 +18,20 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-// Package fx is a modular service framework that makes it easy to create
-// services and re-usable, composable modules.
+// Package fx is a framework that makes it easy to build applications out of
+// reusable, composable modules.
+//
+// Fx applications use dependency injection to eliminate globals without the
+// tedium of manually wiring together function calls. Unlike other approaches
+// to dependency injection, Fx works with plain Go functions: you don't need
+// to use struct tags or embed special types, so Fx automatically works well
+// with most Go packages.
+//
+// Basic usage is explained in the package-level example below. If you're new
+// to Fx, start there! Advanced features, including named instances and
+// optional parameters, are explained in the advanced example.
+//
+// Testing Fx Applications
+//
+// TODO something about testing here.
 package fx
